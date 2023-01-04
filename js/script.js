@@ -110,7 +110,7 @@ gltfLoader.load(
 
         const radius = 8.5
 
-        donut.position.x = 1.5;
+        donut.position.x = 1.3;
 
         donut.rotation.x = Math.PI * 0.2
         donut.rotation.z = Math.PI * 0.15
@@ -155,11 +155,11 @@ let currentSection = 0
 
 const transformDonut = [{
         rotationZ: 0.45,
-        positionX: 1.5
+        positionX: 1.3
     },
     {
         rotationZ: -0.45,
-        positionX: -1.5
+        positionX: -1.3
     },
     {
         rotationZ: 0.0314,

@@ -32,17 +32,17 @@ body.loaded {
 
 section {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     scroll-snap-align: start;
     position: relative;
 }
 
 section .container {
     max-width: 1360px;
-    width: 100%;
+    width: 96%;
     height: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 2%;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,8 +69,15 @@ section.two .container {
     justify-content: center;
     flex-direction: column;
 }
+.para {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+}
 
-h1 {
+.h1p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,7 +85,7 @@ h1 {
     font-size: 90px;
     line-height: 100px;
     font-weight: 700;
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     text-align: center;
     display: flex;
@@ -86,7 +93,7 @@ h1 {
     justify-content: center;
 }
 
-h2 {
+.h2p {
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
@@ -95,22 +102,15 @@ h2 {
     width: 100%;
 }
 
-h3 {
+.h3p {
     font-size: 50px;
     font-weight: 400;
     line-height: 60px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     display: block;
     width: 100%;
 }
 
-p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    display: block;
-    width: 100%;
-}
 
 .loading-bar {
     position: fixed;
@@ -129,3 +129,22 @@ p {
     transform-origin: 100% 0;
     transition: transform 1.5s ease-in-out;
 }
+
+@media (max-width: 768px) {
+    .h1p{
+        line-height: 50px;
+        font-size: larger;
+    }
+    .h2p{
+        line-height: 40px;
+        font-size: medium;
+    }
+    .h3p{
+        line-height: 30px;
+        font-size: small;
+    }
+    .para{
+        font-size: xx-small;
+        line-height: 20px;
+    }
+  }
